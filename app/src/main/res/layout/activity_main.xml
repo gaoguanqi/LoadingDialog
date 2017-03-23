@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
- android:orientation="vertical"
+    android:orientation="vertical"
     tools:context="com.virgo.myapplication.MainActivity">
 
     <Button
@@ -11,4 +12,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
+
+
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <com.virgo.myapplication.widget.VerifyCodeButton
+        android:id="@+id/verifyCodeButton"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/bg_button_code"
+        android:gravity="center"
+        android:text="获取验证码"
+        android:textColor="#FFFFFF"
+        app:vcb_afterCountdownText="重新获取"
+        app:vcb_clickAfterBackground="@drawable/bg_button_code_click_after"
+        app:vcb_countdownTime="6" />
+
+
+
 </LinearLayout>
